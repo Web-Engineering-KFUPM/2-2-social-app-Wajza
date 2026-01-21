@@ -5,18 +5,18 @@
 
   SUBMISSION CHECKLIST (verify each TODO below is completed):
   1) Done: Add ONE main container that wraps the entire page 
-  2) Don: Wrap the header in a container (header/div)
-  3) TODO: Wrap EACH post in its own container (div)
-  4) TODO: Add a nav container with 3 internal links: #home, #create, #about
-  5) TODO: Add ONE external link to HTML docs that opens in a new tab
-  6) TODO: Make the form use action="#" and method="post"
+  2) Done: Wrap the header in a container (header/div)
+  3) Done: Wrap EACH post in its own container (div)
+  4) Done: Add a nav container with 3 internal links: #home, #create, #about
+  5) Done: Add ONE external link to HTML docs that opens in a new tab
+  6) Done: Make the form use action="#" and method="post"
   7) TODO: Add labels linked to inputs/textarea using for= and id=
-  8) TODO: Add name= and placeholder= for the name input and message textarea
-  9) TODO: Make BOTH fields required (name and message)
- 10) TODO: Make the submit button have type="submit"
- 11) TODO: Optionally wrap the footer in a container (footer/div)
- 12) TODO: Close the main container at the end of the page
- 13) TODO: Link an external CSS file (styles.css) in the <head>
+  8) Done: Add name= and placeholder= for the name input and message textarea
+  9) Done: Make BOTH fields required (name and message)
+ 10) Done: Make the submit button have type="submit"
+ 11) Done: Optionally wrap the footer in a container (footer/div)
+ 12) Done: Close the main container at the end of the page
+ 13) Done: Link an external CSS file (styles.css) in the <head>
 -->
  <html lang="en">
    <head>
@@ -51,7 +51,7 @@
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Docs</a>
       </div>
     -->
-      <div>
+      <div class="nav">
         <a href="#home">Home</a>
         <a href="#create">Create</a>
         <a href="#about">About</a>
@@ -64,19 +64,19 @@
 
     <!-- POSTS -->
      <h3>Posts</h3>
-     <div>
+     <div class="post">
     <!-- Done (Containers - 3/3): Wrap EACH post in its own container (e.g., <div>). -->
     <!-- Post 1 - Done: Wrap me in a container -->
       <h4>John Smith</h4>
       <p>Hello! This is my first post in this class.</p>
      </div>
     <!-- Post 2 - Done: Wrap me in a container -->
-     <div>
+     <div class="post">
       <h4>Mary Johnson</h4>
       <p>HTML is clear once you learn the basic building blocks.</p>
      </div>
     <!-- Post 3 - Done: Wrap me in a container -->
-    <div> 
+    <div class="post"> 
       <h4>Alex Brown</h4>
       <p>Next, I want to try adding styles with CSS.</p>
     </div>
@@ -86,25 +86,29 @@
      <p>Complete the form below so it could be used to create a new post.</p>
 
     <!-- FORM (incomplete on purpose) -->
-    <!-- TODO (Forms - 1/4): Add action="#" and method="post" to the <form> tag. -->
-    <!-- TODO (Forms - 2/4): Add proper <label> elements connected with for= and matching id=. -->
-    <!-- TODO (Forms - 3/4): Add name= and placeholder= attributes to both fields. -->
-    <!-- TODO (Forms - 4/4): Make BOTH the name input and message textarea required. -->
+    <!-- Done (Forms - 1/4): Add action="#" and method="post" to the <form> tag. -->
+    <!-- Done (Forms - 2/4): Add proper <label> elements connected with for= and matching id=. -->
+    <!-- Done (Forms - 3/4): Add name= and placeholder= attributes to both fields. -->
+    <!-- Done (Forms - 4/4): Make BOTH the name input and message textarea required. -->
     <!-- Optional: Add a Title input and a Category dropdown. -->
-     <form>
-      <!-- Name field - TODO: add label, id=, name=, placeholder=, and make required -->
+     <form action="#" method="post" class="card">
+     <div class="form-group">
+       <label for="name">Your Name:</label>
+       <input id="name" name="name" type="text" placeholder="Your name" required>
+     </div>
+
+     <div class="form-group">
+       <label for="message">Your Post:</label>
+       <textarea id="message" name="message" rows="4" placeholder="Write your post..." required></textarea>
+     </div>
+      <!-- Name field - Done: add label, id=, name=, placeholder=, and make required -->
       <!-- Example to achieve: <label for="name">Your Name:</label> -->
       <!-- Then: <input id="name" name="name" type="text" placeholder="Your name" required> -->
-       <input type="text">
-
-      <!-- Message field - TODO: add label, id=, name=, placeholder=, and make required -->
+      <!-- Message field - Done: add label, id=, name=, placeholder=, and make required -->
       <!-- Example to achieve: <label for="message">Your Post:</label> -->
       <!-- Then: <textarea id="message" name="message" rows="4" placeholder="Write your post..." required></textarea> -->
-       <textarea rows="4"></textarea>
-
       <!-- Submit button - Done: add type="submit" to the button below -->
-       <button>Post</button>
-       <input type="submit">
+       <button type="submit" class="btn">Post</button>
      </form>
 
     <!-- ABOUT SECTION -->
