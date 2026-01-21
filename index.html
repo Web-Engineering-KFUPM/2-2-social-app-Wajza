@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<!--
+ <div id="app">
+  <!--
   STUDENT STARTER (HTML ONLY): Build a simple social media page
 
   SUBMISSION CHECKLIST (verify each TODO below is completed):
-  1) TODO: Add ONE main container that wraps the entire page
-  2) TODO: Wrap the header in a container (header/div)
+  1) Done: Add ONE main container that wraps the entire page 
+  2) Done: Wrap the header in a container (header/div)
   3) TODO: Wrap EACH post in its own container (div)
   4) TODO: Add a nav container with 3 internal links: #home, #create, #about
   5) TODO: Add ONE external link to HTML docs that opens in a new tab
@@ -17,23 +18,24 @@
  12) TODO: Close the main container at the end of the page
  13) TODO: Link an external CSS file (styles.css) in the <head>
 -->
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Social Media Starter (HTML Only)</title>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <title>Social Media Starter (HTML Only)</title>
     <!-- TODO (CSS): Link an external stylesheet here, e.g.:
          <link rel="stylesheet" href="styles.css">
     -->
-  </head>
-  <body>
+   </head>
+   <body>
     <!-- TODO (Containers - 1/3): Add ONE main container that wraps the entire page content below. -->
     <!-- Example idea: <div id="app"> (open it here) ... and close it at the very end of the body. -->
 
     <!-- HEADER -->
     <!-- TODO (Containers - 2/3): Wrap this header in a semantic <header> or a <div>. -->
-    <h1>Simple Social Media - Starter</h1>
-    <p>This is a starter. Finish the TODOs in comments to complete the page.</p>
-
+     <header>  
+       <h1>Simple Social Media - Starter</h1>
+       <p>This is a starter. Finish the TODOs in comments to complete the page.</p>
+     </header>  
     <!-- NAVIGATION -->
     <!-- TODO (Links - 1/3): Create a small nav container (e.g., <div>) with three internal links: -->
     <!-- TODO: Link 1 -> <a href="#home">Home</a> -->
@@ -50,27 +52,27 @@
     -->
 
     <!-- HOME SECTION -->
-    <h2 id="home">Home</h2>
-    <p>Welcome! Below are a few posts. Your tasks are in comments.</p>
+     <h2 id="home">Home</h2>
+     <p>Welcome! Below are a few posts. Your tasks are in comments.</p>
 
     <!-- POSTS -->
-    <h3>Posts</h3>
+     <h3>Posts</h3>
     <!-- TODO (Containers - 3/3): Wrap EACH post in its own container (e.g., <div>). -->
     <!-- Post 1 - TODO: Wrap me in a container -->
-    <h4>John Smith</h4>
-    <p>Hello! This is my first post in this class.</p>
+     <h4>John Smith</h4>
+     <p>Hello! This is my first post in this class.</p>
 
     <!-- Post 2 - TODO: Wrap me in a container -->
-    <h4>Mary Johnson</h4>
-    <p>HTML is clear once you learn the basic building blocks.</p>
+     <h4>Mary Johnson</h4>
+     <p>HTML is clear once you learn the basic building blocks.</p>
 
     <!-- Post 3 - TODO: Wrap me in a container -->
-    <h4>Alex Brown</h4>
-    <p>Next, I want to try adding styles with CSS.</p>
+     <h4>Alex Brown</h4>
+     <p>Next, I want to try adding styles with CSS.</p>
 
     <!-- CREATE SECTION -->
-    <h2 id="create">Create</h2>
-    <p>Complete the form below so it could be used to create a new post.</p>
+     <h2 id="create">Create</h2>
+     <p>Complete the form below so it could be used to create a new post.</p>
 
     <!-- FORM (incomplete on purpose) -->
     <!-- TODO (Forms - 1/4): Add action="#" and method="post" to the <form> tag. -->
@@ -78,29 +80,31 @@
     <!-- TODO (Forms - 3/4): Add name= and placeholder= attributes to both fields. -->
     <!-- TODO (Forms - 4/4): Make BOTH the name input and message textarea required. -->
     <!-- Optional: Add a Title input and a Category dropdown. -->
-    <form>
+     <form>
       <!-- Name field - TODO: add label, id=, name=, placeholder=, and make required -->
       <!-- Example to achieve: <label for="name">Your Name:</label> -->
       <!-- Then: <input id="name" name="name" type="text" placeholder="Your name" required> -->
-      <input type="text">
+       <input type="text">
 
       <!-- Message field - TODO: add label, id=, name=, placeholder=, and make required -->
       <!-- Example to achieve: <label for="message">Your Post:</label> -->
       <!-- Then: <textarea id="message" name="message" rows="4" placeholder="Write your post..." required></textarea> -->
-      <textarea rows="4"></textarea>
+       <textarea rows="4"></textarea>
 
       <!-- Submit button - TODO: add type="submit" to the button below -->
-      <button>Post</button>
-    </form>
+       <button>Post</button>
+     </form>
 
     <!-- ABOUT SECTION -->
-    <h2 id="about">About</h2>
-    <p>This mini app is for practicing containers, links, and forms with pure HTML.</p>
+     <h2 id="about">About</h2>
+     <p>This mini app is for practicing containers, links, and forms with pure HTML.</p>
 
     <!-- FOOTER -->
     <!-- TODO: Optionally wrap this in a semantic <footer> or a <div>. -->
-    <p>© 2024 Web Fundamentals</p>
+     <p>© 2024 Web Fundamentals</p>
 
     <!-- TODO: Close your main container here if you opened one at the top. -->
-  </body>
-</html>
+   </body>
+ </html>
+
+ </div>
